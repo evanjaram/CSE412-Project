@@ -1,0 +1,48 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Flask specific
+instance/
+*.db
+*.sqlite3
+
+# VS Code or other IDE configurations
+.vscode/
+
+# PyCharm specific
+.idea/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Test coverage reports
+.coverage
+.coverage.*
+
+# Database files (if you are storing local database files)
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Configuration files
+*.config
+*.ini
+
+# Sensitive files
+.env              # Add this to keep environment variables safe
+*.pem             # Private keys (if you're using SSH or API keys)
+
+# Other unnecessary or temporary files
+*.swp             # Swap files from Vim or other editors
+*.bak             # Backup files from text editors
+*.tmp             # Temporary files
