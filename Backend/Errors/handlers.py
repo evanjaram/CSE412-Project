@@ -15,3 +15,8 @@ def handle_empty_query_output_error(e):
     response = jsonify({"error": e.message})
     response.status_code = e.status_code
     return response
+
+def handle_incorrect_parameter_form_error(e):
+    response = jsonify({"error": e.message})
+    response.status_code = e.status_code
+    return response

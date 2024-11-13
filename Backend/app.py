@@ -35,6 +35,9 @@ def cases_by_country():
 
     if missing_vars:
         raise MissingParameterError(f"Missing required parameters: {', '.join(missing_vars)}")
+    
+    if not is_valid_date(start_date) or not is_valid_date(end_date):
+        raise IncorrectParameterFormError("Dates must be of the form YYYY-MM-DD")
 
     try:
         params = (country, start_date, end_date)
@@ -76,6 +79,9 @@ def deaths_by_country():
 
     if missing_vars:
         raise MissingParameterError(f"Missing required parameters: {', '.join(missing_vars)}")
+    
+    if not is_valid_date(start_date) or not is_valid_date(end_date):
+        raise IncorrectParameterFormError("Dates must be of the form YYYY-MM-DD")
 
     try:
         params = (country, start_date, end_date)
@@ -124,6 +130,9 @@ def testing_by_country():
 
     if metric not in accepted_metrics:
         raise ValueError(f"Invalid metric name: {metric}")
+    
+    if not is_valid_date(start_date) or not is_valid_date(end_date):
+        raise IncorrectParameterFormError("Dates must be of the form YYYY-MM-DD")
 
     try:
         params = (country, start_date, end_date)
@@ -181,6 +190,9 @@ def hospitalizations_by_country():
     full_indicator = indicator
     if per_million.lower() == 'true':
         full_indicator += " per million"
+
+    if not is_valid_date(start_date) or not is_valid_date(end_date):
+        raise IncorrectParameterFormError("Dates must be of the form YYYY-MM-DD")
     
     try:
         params = (country, full_indicator, start_date, end_date)
@@ -229,6 +241,9 @@ def vaccinations_by_country():
 
     if metric not in accepted_metrics:
         raise ValueError(f"Invalid metric name: {metric}")
+    
+    if not is_valid_date(start_date) or not is_valid_date(end_date):
+        raise IncorrectParameterFormError("Dates must be of the form YYYY-MM-DD")
 
     try:
         params = (country, start_date, end_date)
