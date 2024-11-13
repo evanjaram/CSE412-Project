@@ -7,6 +7,8 @@ from Util.util import *
 app = Flask(__name__)
 register_error_handlers(app)
 
+
+# Single country queries
 """
     Get total cases by country within a window of time
 
@@ -99,7 +101,7 @@ def deaths_by_country():
         - metric: testing metric of choice
 
     Returns:
-        - list of tuples (date and total testing metric value)
+        - list of tuples (date, indicator (how the country got metric values), and testing metric value)
 """
 @app.route('/api/testing-by-country', methods=['GET'])
 def testing_by_country():
@@ -148,7 +150,7 @@ def testing_by_country():
         - per_million: boolean
 
     Returns:
-        - list of tuples (date and total hospitalizations value)
+        - list of tuples (date, indicator, and hospitalizations value)
 """
 @app.route('/api/hospitalizations-by-country', methods=['GET'])
 def hospitalizations_by_country():
@@ -192,6 +194,55 @@ def hospitalizations_by_country():
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
         return jsonify({"error": str(e)}), e.status_code
+    
+
+"""
+    Get vaccinations metric by country within a window of time
+
+    Params:
+        - country: name of country (or location in general)
+        - start: start date for window of time
+        - end: end date for window of time
+        - metric: vaccinations metric of choice
+
+    Returns:
+        - list of tuples (date and vaccinations metric value)
+"""
+@app.route('/api/vaccinations-by-country', methods=['GET'])
+def vaccinations_by_country():
+    accepted_params = ['country', 'end', 'start', 'metric']
+    accepted_metrics = ['v_total_vaccinations', 'v_people_fully_vaccinated', 'v_total_boosters', 
+                        'v_daily_vaccinations', 'v_people_fully_vaccinated_per_hundred', 'v_total_boosters_per_hundred']
+    unknown_params = [key for key in request.args.keys() if key not in accepted_params]
+
+    if unknown_params:
+        raise UnknownParameterError(f"Unknown parameters: {', '.join(unknown_params)}")
+
+    country = request.args.get('country')
+    start_date = request.args.get('start')
+    end_date = request.args.get('end')
+    metric = request.args.get('metric')
+    missing_vars = find_missing_variables(country=country, start_date=start_date, end_date=end_date, metric=metric)
+
+    if missing_vars:
+        raise MissingParameterError(f"Missing required parameters: {', '.join(missing_vars)}")
+
+    if metric not in accepted_metrics:
+        raise ValueError(f"Invalid metric name: {metric}")
+
+    try:
+        params = (country, start_date, end_date)
+        query = f"""SELECT TO_CHAR(v_date, 'YYYY-MM-DD') AS formatted_date, {metric} FROM vaccinations 
+                    WHERE v_nationname = %s AND v_date BETWEEN %s AND %s;"""
+        data = execute_query(query, params, True)
+        
+        if data:
+            return jsonify(data)
+        else:
+            raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
+    except Exception as e:
+        return jsonify({"error": str(e)}), e.status_code
+
 
 
 if __name__ == "__main__":
