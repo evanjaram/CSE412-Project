@@ -9,7 +9,7 @@
 
 ### Setup Instructions
 1. **Clone the repository**:
-    - Open a new terminal and run:
+    - Open a new terminal in your desired directory and run:
    ```bash
    git clone "https://github.com/evanjaram/CSE412-Project.git"
    cd CSE412-Project
