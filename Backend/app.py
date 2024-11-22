@@ -303,7 +303,18 @@ def compare_cases_by_country():
         data = execute_query(query, params, True)
 
         if data:
-            return jsonify(data)
+            json_result = {}
+
+            for row in data:
+                country = row[1]
+                row_cleaned = [row[0], row[2]]
+
+                if country not in json_result:
+                    json_result[country] = []
+                
+                json_result[country].append(row_cleaned)
+            
+            return jsonify(json_result)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
@@ -353,7 +364,18 @@ def compare_deaths_by_country():
         data = execute_query(query, params, True)
 
         if data:
-            return jsonify(data)
+            json_result = {}
+
+            for row in data:
+                country = row[1]
+                row_cleaned = [row[0], row[2]]
+
+                if country not in json_result:
+                    json_result[country] = []
+                
+                json_result[country].append(row_cleaned)
+            
+            return jsonify(json_result)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
@@ -410,7 +432,18 @@ def compare_testing_by_country():
         data = execute_query(query, params, True)
         
         if data:
-            return jsonify(data)
+            json_result = {}
+
+            for row in data:
+                country = row[1]
+                row_cleaned = [row[0], row[2], row[3]]
+
+                if country not in json_result:
+                    json_result[country] = []
+                
+                json_result[country].append(row_cleaned)
+            
+            return jsonify(json_result)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
@@ -475,7 +508,18 @@ def compare_hospitalizations_by_country():
         data = execute_query(query, params, True)
         
         if data:
-            return jsonify(data)
+            json_result = {}
+
+            for row in data:
+                country = row[1]
+                row_cleaned = [row[0], row[2], row[3]]
+
+                if country not in json_result:
+                    json_result[country] = []
+                
+                json_result[country].append(row_cleaned)
+            
+            return jsonify(json_result)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
@@ -531,7 +575,18 @@ def compare_vaccinations_by_country():
         data = execute_query(query, params, True)
         
         if data:
-            return jsonify(data)
+            json_result = {}
+
+            for row in data:
+                country = row[1]
+                row_cleaned = [row[0], row[2]]
+
+                if country not in json_result:
+                    json_result[country] = []
+                
+                json_result[country].append(row_cleaned)
+            
+            return jsonify(json_result)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}' with parameters: {params}")
     except Exception as e:
