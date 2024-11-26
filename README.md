@@ -1,6 +1,6 @@
 # CSE412-Project
 
-## Installation and Setup
+## Installation and Setup (For Local Development)
 
 ### Prerequisites
 - Python 3.13: Download from [python.org](https://www.python.org/downloads/)
