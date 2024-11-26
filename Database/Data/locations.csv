@@ -1,0 +1,160 @@
+location,iso_code,last_observation_date,source_name,source_website
+Afghanistan,AFG,,,
+Africa,OWID_AFR,,,
+Albania,ALB,,,
+Algeria,DZA,12/23/2022,Ministry of Health via github.com/yasserkaddour/covid19-icu-data-algeria/,https://github.com/yasserkaddour/covid19-icu-data-algeria/
+Angola,AGO,,,
+Argentina,ARG,4/24/2022,"Government of Argentina, via Rodrigo Maidana",https://www.argentina.gob.ar/coronavirus/informes-diarios/reportes
+Armenia,ARM,,,
+Asia,OWID_ASI,,,
+Australia,AUS,12/7/2023,Official data from states via covidbaseau.com,https://covidbaseau.com
+Austria,AUT,6/30/2023,Austrian Agency for Health and Food Safety,https://covid19-dashboard.ages.at/
+Azerbaijan,AZE,,,
+Bahamas,BHS,,,
+Bahrain,BHR,,,
+Banglades,BGD,,,
+Barbados,BRB,,,
+Belarus,BLR,,,
+Belgium,BEL,6/27/2023,Sciensano,https://epistat.sciensano.be/
+Belize,BLZ,,,
+Bolivia,BOL,10/13/2022,"Ministry of Health, via Sociedatos on GitHub",https://github.com/sociedatos/bo-hospitalizados_por_departamento
+Bosnia and Herzegovina,BIH,,,
+Botswana,BWA,,,
+Brazil,BRA,,,
+Bulgaria,BGR,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Cambodia,KHM,,,
+Cameroon,CMR,,,
+Canada,CAN,3/26/2024,Government of Canada,https://health-infobase.canada.ca/covid-19/
+Cape Verde,CPV,,,
+Chile,CHL,8/31/2023,"Ministry of Health, via Ministry of Science GitHub repository",https://github.com/MinCiencia/Datos-COVID19
+China,CHN,,,
+Colombia,COL,,,
+Costa Rica,CRI,,,
+Cote d'Ivoire,CIV,,,
+Croatia,HRV,8/21/2022,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Cuba,CUB,,,
+Cyprus,CYP,4/20/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Czechia,CZE,8/12/2024,Ministry of Health,https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19
+Democratic Republic of Congo,COD,,,
+Denmark,DNK,6/13/2023,"Statens Serum Institut, covid19-data-denmark on GitHub","https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata, https://github.com/mok0/covid19-data-denmark"
+Dominican Republic,DOM,,,
+Ecuador,ECU,,,
+Egypt,EGY,,,
+El Salvador,SLV,,,
+Estonia,EST,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Eswatini,SWZ,,,
+Ethiopia,ETH,,,
+Europe,OWID_EUR,,,
+European Union,OWID_EUN,,,
+Fiji,FJI,,,
+Finland,FIN,12/1/2022,Department of Health and Welfare,https://www.thl.fi/episeuranta/tautitapaukset/coronamap.html
+France,FRA,3/31/2023,Santé publique France,https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/
+Georgia,GEO,,,
+Germany,DEU,6/27/2023,Robert Koch Institute,https://github.com/robert-koch-institut/COVID-19-Hospitalisierungen_in_Deutschland/
+Ghana,GHA,,,
+Greece,GRC,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Guatemala,GTM,,,
+Guyana,GUY,,,
+Haiti,HTI,,,
+High income,OWID_HIC,,,
+Honduras,HND,,,
+Hungary,HUN,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+India,IND,,,
+Indonesia,IDN,,,
+Iran,IRN,,,
+Iraq,IRQ,,,
+Ireland,IRL,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Israel,ISR,5/7/2023,Ministry of Health,https://datadashboard.health.gov.il/COVID-19/
+Italy,ITA,8/7/2024,Ministry of Health and Higher Institute of Health,"https://github.com/pcm-dpc/COVID-19, https://covid19.infn.it/iss/"
+Jamaica,JAM,,,
+Japan,JPN,3/27/2024,"Ministry of Health, Labour and Welfare",https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html
+Jordan,JOR,,,
+Kazakhstan,KAZ,,,
+Kenya,KEN,,,
+Kosovo,OWID_KOS,,,
+Kuwait,KWT,,,
+Kyrgyzstan,KGZ,,,
+Laos,LAO,,,
+Latvia,LVA,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Lebanon,LBN,,,
+Lesotho,LSO,,,
+Libya,LBY,,,
+Lithuania,LTU,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Low income,OWID_LIC,,,
+Lower middle income,OWID_LMC,,,
+Luxembourg,LUX,3/30/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Madagascar,MDG,,,
+Malawi,MWI,,,
+Malaysia,MYS,8/10/2024,Ministry of Health,https://github.com/MoH-Malaysia/covid19-public
+Mali,MLI,,,
+Malta,MLT,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Mauritania,MRT,,,
+Mauritius,MUS,,,
+Mexico,MEX,,,
+Moldova,MDA,,,
+Mongolia,MNG,,,
+Montenegro,MNE,,,
+Morocco,MAR,,,
+Mozambique,MOZ,,,
+Myanmar,MMR,,,
+Namibia,NAM,,,
+Nepal,NPL,,,
+Netherlands,NLD,5/31/2024,National Coordination Center Patient Distribution,https://lcps.nu/datafeed/
+New Caledonia,NCL,,,
+New Zealand,NZL,,,
+Nigeria,NGA,,,
+North America,OWID_NAM,,,
+North Macedonia,MKD,,,
+Norway,NOR,11/13/2022,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Oceania,OWID_OCE,,,
+Oman,OMN,,,
+Pakistan,PAK,,,
+Palestine,PSE,,,
+Panama,PAN,,,
+Papua New Guinea,PNG,,,
+Paraguay,PRY,,,
+Peru,PER,,,
+Philippines,PHL,,,
+Poland,POL,9/21/2022,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Portugal,PRT,11/8/2022,"General Directorate of Health, via Data Science for Social Good Portugal",https://github.com/dssg-pt/covid19pt-data
+Puerto Rico,PRI,,,
+Qatar,QAT,,,
+Romania,ROU,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Russia,RUS,,Government of Russia,
+Rwanda,RWA,,,
+Saudi Arabia,SAU,,,
+Senegal,SEN,,,
+Serbia,SRB,6/14/2023,Ministry of Health via github.com/aleksandar-jovicic/COVID19-Serbia,https://github.com/aleksandar-jovicic/COVID19-Serbia
+Singapore,SGP,2/18/2024,Ministry of Health,https://covidsitrep.moh.gov.sg/; https://data.gov.sg/dataset/covid-19-hospital-admissions
+Slovakia,SVK,11/26/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Slovenia,SVN,3/31/2023,European Centre for Disease Prevention and Control,https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19
+Somalia,SOM,,,
+South Africa,ZAF,7/26/2022,National Policy Data Observatory (NPDO) at the Council for Scientific and Industrial Research (CSIR),https://docs.google.com/spreadsheets/d/1Ln3FO3E0hz2r_kCCWM6on9Wd18wRvrkiIV-bbE2EDQ0/edit#gid=1044172863
+South America,OWID_SAM,,,
+South Korea,KOR,3/8/2023,"Ministry of Health and Welfare, via WWolf on GitHub",http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=161&dataGubun=&ncvContSeq=&contSeq=&board_id=
+Spain,ESP,6/11/2023,"Ministry of Health, Consumption and Social Welfare",https://www.sanidad.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/capacidadAsistencial.htm
+Sri Lanka,LKA,,,
+Sudan,SDN,,,
+Suriname,SUR,,,
+Sweden,SWE,4/5/2024,The Swedish National Board of Health and Welfare,https://www.socialstyrelsen.se/statistik-och-data/statistik/statistik-om-covid-19/
+Switzerland,CHE,5/1/2023,Federal Office of Public Health,https://www.covid19.admin.ch/
+Syria,SYR,,,
+Tanzania,TZA,,,
+Thailand,THA,,,
+Trinidad and Tobago,TTO,,,
+Tunisia,TUN,,,
+Turkey,TUR,,,
+Uganda,UGA,,,
+Ukraine,UKR,,,
+United Arab Emirates,ARE,,,
+United Kingdom,GBR,7/12/2023,Government of the United Kingdom,https://coronavirus.data.gov.uk/details/healthcare
+United States,USA,4/25/2024,U.S. Department of Health & Human Services,https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh
+Upper middle income,OWID_UMC,,,
+Uruguay,URY,,,
+Uzbekistan,UZB,,,
+Venezuela,VEN,,,
+Vietnam,VNM,,,
+Yemen,YEM,,,
+Zambia,ZMB,,,
+Zimbabwe,ZWE,,,
+World,OWID_WRL,,,
