@@ -8,23 +8,24 @@ app = Flask(__name__)
 register_error_handlers(app)
 
 
-# Retrieve all country names and keys for populating dropdown menu
+# Retrieve all country names for populating dropdown menu
 """
-    Get all country names and keys
+    Get all country names
 
     Params: None
 
     Returns:
-        - List of tuples (nation name and key)
+        - List of country names
 """
 @app.route('/api/get-countries', methods=['GET'])
 def get_countries():
     try:
-        query = 'SELECT l_nationname, l_nationkey FROM location;'
+        query = 'SELECT l_nationname FROM location;'
         data = execute_query(query, fetch_results=True)
 
         if data:
-            return jsonify(data)
+            flattened_data = [item for sublist in data for item in sublist]
+            return jsonify(flattened_data)
         else:
             raise EmptyQueryOutputError(f"Query returned no rows. Query: '{query}'")
     except Exception as e:
