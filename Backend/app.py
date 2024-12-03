@@ -1,10 +1,12 @@
 from db.queries import *
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from Errors import *
 from Errors.custom_exceptions import *
 from Util.util import *
 
 app = Flask(__name__)
+CORS(app)
 register_error_handlers(app)
 
 
