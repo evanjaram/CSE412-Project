@@ -56,12 +56,12 @@
     ```
 
 ## Application Walkthrough
-1. Upon loading up the application, the user should select at least 1 country/region from the dropdown menu by clicking the arrow on the right side. The dropdown menu allows the user to also search for a country they have in mind. Selecting multiple countries/regions will compare them on the line graph.
+1. Upon loading up the application, the user should select at least 1 country/region from the dropdown menu by clicking the arrow on the right side. The dropdown menu allows the user to also search for a country they have in mind. Selecting multiple countries/regions will compare them on the line graph.  
 ![alt text](Images/select-countries.png)
-2. Next, select the range of dates from which you wish to view data. NOTE: end date must come after start date. The app will refuse your chart generation request if this condition is not satisfied.
+2. Next, select the range of dates from which you wish to view data. NOTE: end date must come after start date. The app will refuse your chart generation request if this condition is not satisfied.  
 ![alt text](Images/select-dates.png)
-3. Select the data category you wish to visualize.
+3. Select the data category you wish to visualize.  
 ![alt text](Images/select-category.png)
-4. Depending on your choice for the data category, you may need to select the specific metric/indicator you wish to view. (The Per Million checkbox is only available for data category Hospitalizations).
+4. Depending on your choice for the data category, you may need to select the specific metric/indicator you wish to view. (The Per Million checkbox is only available for data category Hospitalizations).  
 ![alt text](Images/select-metric.png)
 5. Once all required input fields are filled, the user may generate the line chart by clicking the Generate Chart button.
