@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID Data Visualizer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+  <style>
+    h1 {
+        text-align: center;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>COVID Data Over Time</h1>
+
+  <div class="controls">
+    <label for="country-select">Select Countries:</label>
+    <select multiple id="country-select"></select>
+
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date">
+
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date">
+
+    <label for="data-to-view">Data Category:</label>
+    <select id="data-to-view">
+        <option value="" disabled selected>Select a Category</option>
+        <option value="cases">Cases</option>
+        <option value="deaths">Deaths</option>
+        <option value="hospitalizations">Hospitalizations</option>
+        <option value="testing">Testing</option>
+        <option value="vaccinations">Vaccinations</option>
+    </select>
+
+    <label for="metric-select" id="metric-label" style="visibility: hidden;">Metric/Indicator</label>
+    <select id="metric-select" style="visibility: hidden;"></select>
+
+    <label for="per-million-cb" id="per-million-label" style="visibility: hidden;">Per Million:</label>
+    <input type="checkbox" id="per-million-cb" style="visibility: hidden;">
+
+    <br /><br />
+    <button id="update-btn">Generate Chart</button>
+    <p id="date-error" class="error-message"></p>
+  </div>
+
+  <canvas id="covid-chart" width="80%" height="40%"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function initMultiSelect()
+    {
+        new MultiSelectTag('country-select', {
+            rounded: true,
+            shadow: true,
+            placeholder: 'Search',
+            tagColor: {
+                textColor: '#327b2c',
+                borderColor: '#92e681',
+                bgColor: '#eaffe6',
+            },
+            onChange: function(values) {
+                console.log(values.map(value => value.value))
+                updateSelectedCountries(values);
+            }
+        })
+    }
+  </script>
+</body>
+</html>
