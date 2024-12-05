@@ -39,7 +39,6 @@ instance/
 *.ini
 
 # Sensitive files
-.env              # Add this to keep environment variables safe
 *.pem             # Private keys (if you're using SSH or API keys)
 
 # Other unnecessary or temporary files
