@@ -54,6 +54,8 @@
     ```bash
     start index.html
     ```
+3. **Closing Down App**
+    - When you are 100% done with your session of using the app, use CTRL+c in the terminal window running the backend to shut down the backend server.
 
 ## Application Walkthrough
 1. Upon loading up the application, the user should select at least 1 country/region from the dropdown menu by clicking the arrow on the right side. The dropdown menu allows the user to also search for a country they have in mind. Selecting multiple countries/regions will compare them on the line graph.  
